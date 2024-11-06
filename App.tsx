@@ -1,13 +1,12 @@
 import "uno.css";
 import { render } from "solid-js/web";
 import type { Component } from "solid-js";
+import { Router, RouteSectionProps, Route } from "@solidjs/router";
 
-const App: Component = () => {
-  return (
-    <>
-      <p>...</p>
-    </>
-  );
+import NotFound from "./pages/NotFound";
+
+const App: Component<RouteSectionProps> = (props) => {
+  return <>{props.children}</>;
 };
 
 const root = document.getElementById("root");
@@ -18,4 +17,11 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <App />, root!);
+render(
+  () => (
+    <Router root={App}>
+      <Route path="*" component={NotFound} />
+    </Router>
+  ),
+  root!
+);
