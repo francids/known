@@ -1,13 +1,10 @@
 import "uno.css";
 import { render } from "solid-js/web";
-import type { Component } from "solid-js";
-import { Router, RouteSectionProps, Route } from "@solidjs/router";
+import { Router, Route } from "@solidjs/router";
+
+import Layout from "./layouts/Layout";
 
 import NotFound from "./pages/NotFound";
-
-const App: Component<RouteSectionProps> = (props) => {
-  return <>{props.children}</>;
-};
 
 const root = document.getElementById("root");
 
@@ -19,7 +16,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
   () => (
-    <Router root={App}>
+    <Router root={Layout}>
       <Route path="*" component={NotFound} />
     </Router>
   ),
