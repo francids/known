@@ -1,11 +1,13 @@
-import { RouteSectionProps } from "@solidjs/router";
+import type { RouteSectionProps } from "@solidjs/router";
 import type { Component } from "solid-js";
+
+import Topbar from "../components/Topbar";
 
 const Layout: Component<RouteSectionProps> = (props) => {
   return (
     <>
-      <header></header>
-      <main>{props.children}</main>
+      <Topbar />
+      <main class="container">{props.children}</main>
       <footer></footer>
     </>
   );
