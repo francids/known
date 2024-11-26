@@ -1,13 +1,13 @@
 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    circle {
-    fill: #0A0A0A;
-    }
-    @media (prefers-color-scheme: dark) {
-    circle {
-    fill: #FAFAFA;
-    }
-    }
-  </style>
-  <circle cx="25" cy="25" r="20" fill="#FAFAFA" />
+    <style>
+        circle {
+        fill: #0A0A0A;
+        }
+        @media (prefers-color-scheme: dark) {
+        circle {
+        fill: #FAFAFA;
+        }
+        }
+    </style>
+    <circle cx="25" cy="25" r="20" fill="#FAFAFA" />
 </svg>

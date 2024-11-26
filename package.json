@@ -1,22 +1,21 @@
 {
   "name": "known",
-  "version": "0.0.0",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "devDependencies": {
-    "@unocss/preset-mini": "^0.58.3",
-    "@unocss/vite": "^0.58.3",
-    "solid-devtools": "^0.29.2",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.11",
-    "vite-plugin-solid": "^2.8.2"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@solidjs/router": "^0.15.1",
-    "solid-js": "^1.8.11"
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.15",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@unocss/preset-mini": "^0.64.1",
+    "unocss": "^0.64.1"
   }
 }

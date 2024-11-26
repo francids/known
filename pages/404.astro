@@ -1,0 +1,9 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <p class="font-medium text-base">
+    The page <code>{new URL(Astro.request.url).pathname}</code> was not found.
+  </p>
+</Layout>
